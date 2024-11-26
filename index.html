@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test work</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="logo">Logo</a>
+                <nav class="header-menu">
+                    <a href="#" class="">Про нас</a>
+                    <a href="#" class="">Переваги</a>
+                    <a href="#" class="">Галерея</a>
+                </nav>
+                <div class="language-selector">
+                    <select id="languageSelector">
+                        <option value="en">English</option>
+                        <option value="uk">Українська</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+                <a href="#" class="primary-btn">Request now!</a>
+
+                <div class="burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                 </div>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menu">
+            <ul class="menu-inner">
+               <li class="menu-overlay__item">
+                    <a href="https://gordeevskaya.com" class="menu-link">Головна</a>
+                </li>
+               <li class="menu-overlay__item">
+                    <a href="https://gordeevskaya.com/#about" class="menu-link">О нас</a>
+                </li>
+               <li class="menu-overlay__item">
+                    <a href="https://gordeevskaya.com/all-giri/" class="menu-link">О продукте</a>
+                </li>
+               <li class="menu-overlay__item">
+                    <div class="language-selector">
+                        <select id="languageSelector">
+                            <option value="en">English</option>
+                            <option value="uk">Українська</option>
+                            <option value="es">Español</option>
+                        </select>
+                    </div>
+               </li>
+               <li class="menu-overlay__item">
+                    <a href="#" class="primary-btn">Request now!</a>
+               </li>
+            </ul>
+
+         </div>
+    </header>
+    <main>
+        <section class="hero-banner video" id="video">
+            <div class="container">
+                <div class="hero-banner__wrapper">
+                    <div class="hero-banner__media">
+                            <iframe width="420" height="315"
+                                src="https://www.youtube.com/embed/z-ecLQZ0yLY">
+                            </iframe>
+                    </div>
+                    <div class="hero-banner__form">
+                        <h2 id="formTitle">Реєстрація</h2>
+                        <form id="registrationForm">
+                            <label for="name" id="nameLabel">Ім'я</label>
+                            <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+                            
+                            <label for="email" id="emailLabel">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                            
+                            <label for="password" id="passwordLabel">Пароль</label>
+                            <input type="password" id="password" name="password" placeholder="Ваш пароль" required>
+                            
+                            <button type="submit" id="submitButton" class="primary-btn">Зареєструватися</button>
+                        </form>
+                        <div class="response-message" id="responseMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum temporibus placeat veritatis dolorem ducimus, saepe omnis ut. Voluptatum voluptate nemo sed nam! Est nihil dolore ut voluptatibus doloremque! Magnam ullam vero nostrum! Et ratione iste, numquam, veritatis saepe officiis ullam esse, ipsam quidem eius vero! Amet aliquam reprehenderit ea ut!</p>
+                    <a href="#" class="primary-btn">More about us</a>
+                </div>
+            </div>
+        </section>
+        <section class="slider" id="slider">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/photo-1496449903678-68ddcb189a24.avif" alt="img">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/photo-1495001258031-d1b407bc1776.avif" alt="img">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/photo-1509114397022-ed747cca3f65.avif" alt="img">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="img/photo-1518495973542-4542c06a5843.avif" alt="img">
+                      </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <a href="#" class="logo">Logo</a>
+                <nav class="footer-menu">
+                    <a href="#" >Про нас</a>
+                    <a href="#" >Переваги</a>
+                    <a href="#" >Галерея</a>
+                </nav>
+        
+                <nav class="social">
+                    <a href="https://t.me/hebbi">Telegram</a>
+                    <a href="https://github.com/Jarogam?tab=repositories">Github</a>
+                    <a href="https://www.linkedin.com/in/oleksandr-bonatskiy-834245135/">Linkdln</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
